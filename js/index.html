@@ -1,43 +1,82 @@
 <HTML>
    <HEAD> 
-        <Title> CSS Tag </Title> 
-         <link href="global.css" rel="stylesheet">
-         <link href="common.css" rel="stylesheet">
+        <Title> Javascript </Title> 
+        <!-- 
 
-         <style type="text/css">
+        Writing into an HTML element, using innerHTML.
+        Writing into the HTML output using document.write().
+        Writing into an alert box, using window.alert().
+        Writing into the browser console, using console.log().
 
-            h1{
-                color:magenta;
-            }
+        let x, y, z;    // Statement 1
+x = 5;          // Statement 2
+y = 6;          // Statement 3
+z = x + y;      // Statement 4
 
-            body{
-                background-color: brown;
-            }
-         </style>
+            Comments.
+
+            const price1 = 5;
+const price2 = 6;
+let total = price1 + price2;
+
+
+            Operators = , + , * , 
+
+        -->
+        
+
+            
+        
     </HEAD>
     
     
-    <Body style="background-color: aqua;">
-        <div>
-            <h1>This is heading1</h1>
-            <h3> This is heading 3</h3>
-        </div>
+    <Body>
+        <!-- <p id="sumDemo">Sum = <span id="dynamicDemo"></span></p> -->
 
+        <p id ="dynamicDemo"></p>
 
-        <div style="height:90px !important;">
-           
-           <table style="height: 120px;">
+        <input type = "text" id ="firstVal" value="">
+        <br>
+        <input type = "text" id ="secondVal" value="">
+        <br>
+        <button onclick="addtwonumbers();">Click here to sum</button>
+        <script type="text/Javascript">
+            // document.getElementById("demo").innerHTML = "hello";
+            // document.write("Welcome to JS");
+            // alert('Welcome to Javascript');
+            // console.log("Console Javascript");
 
-            <tr>
-                <td><h1>This is table</h1></td>
-            </tr>
-           </table>
-      
+            // let , var & const.
+         
+             // document.getElementById("demo").innerHTML = x;
+            // console.log(a);
+            
+           /* let x = 10;
+            x = 40;
 
-           <h1 style="color:rgb(0, 64, 255, 0.5)">This is one more h1 tag</h1>
+            let y = 70;
+            y = 90;
 
-        </div>
+            let z = x * y;
 
+            */
+
+           // console.log(b); // wrong.
+
+          //  const companyName = 'Emplicar';
+          //  document.getElementById("demo").innerHTML = z;
+
+          function addtwonumbers()
+          {
+            // console.log('Method called');
+
+            let firstValue_ = document.getElementById("firstVal").value;
+            let secondVal_ = document.getElementById("secondVal").value;
+            let sumval_ = parseInt(firstValue_) + parseInt(secondVal_);
+            document.getElementById("dynamicDemo").innerHTML = "New sum =" + sumval_;
+
+          }
+        </script>
 
     </Body>
     
