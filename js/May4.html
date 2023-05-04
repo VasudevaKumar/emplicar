@@ -1,0 +1,100 @@
+<HTML>
+    <HEAD> 
+         <Title> Javascript </Title> 
+         <!-- 
+ 
+         
+ 
+         -->
+         
+ 
+             
+         
+     </HEAD>
+     
+     
+     <Body>
+         <!-- <p id="sumDemo">Sum = <span id="dynamicDemo"></span></p> -->
+ 
+         <p id ="dynamicDemo"></p>
+        
+         
+         <script type="text/Javascript">
+           function OperatorCheck(a , b) // Parameters
+           {
+             // let c = parseInt(a) + parseInt(b); // Arthematic Opertion ( + )
+             // let c = parseInt(a) - parseInt(b); // Arthematic Opertion ( - )
+            // let c = parseInt(a) * parseInt(b); // Arthematic Opertion ( * )
+             // let c = parseInt(a) / parseInt(b); // Arthematic Opertion ( / )
+             // let c = parseInt(a) % parseInt(b); // Arthematic Opertion ( / )
+            
+            // a++; // Arthematic Opertion ( ++ )
+           // a--; // Arthematic Opertion ( -- )
+
+            // document.getElementById("dynamicDemo").innerHTML = a;
+
+
+ 
+           }
+
+           function assignmentOperator()
+           {
+
+                let a = 10; // = is called assignement operator.
+                let b = 0;
+                let c = 0;
+                b += 5;  // b = b+5;
+                c -= 8; // c = c-8;
+
+
+                // document.write(b);
+
+           }
+           // /OperatorCheck(22,3); // Arguments.
+
+           function dataTypes()
+           {
+                // String 
+               //  let cName = "New Company";
+                // let cName = 'New Company';
+
+                // Number 
+               
+                 let a = 89;
+               //  let b = 89.50;
+
+
+               // Boolean
+
+                // let isValid = true;
+                // let isValidnot = false;
+
+                let cat;    // undefind datatype.
+                //document.write(typeof(a));
+
+                // BigInt
+
+              //  let big = BigInt(1254874474484475488);
+
+                // Objects.
+               // 1.  Object.
+               // 2. Arrray
+               // 3. Date object.
+
+               // const cars = ["Maruthi" , "Honda", "BMW"];
+              //  document.write(cars[1]);
+              const persons = {"firstName":"Vasudev", "lastName": "Sarvepalli", "Job":"trainer"};
+              // document.write(persons.firstName);
+              // Vasudev Sarvepalli is a trainer.
+
+              const todaydate = new Date("2023-05-04");
+              document.write(todaydate);
+
+           }
+           assignmentOperator();
+           dataTypes();
+         </script>
+ 
+     </Body>
+     
+     </HTML>
