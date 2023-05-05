@@ -1,0 +1,82 @@
+<HTML>
+    <HEAD> 
+         <Title> Javascript </Title> 
+         <!-- 
+ 
+         Onchange
+         Onclick
+         Onmouseout
+         Onmouseover
+         Onkeydown
+         onload.
+ 
+         -->
+         
+ 
+             
+         
+     </HEAD>
+     
+     
+     <Body onload="loadDynamicContent()">
+         <!-- <p id="sumDemo">Sum = <span id="dynamicDemo"></span></p> -->
+ 
+         <p id ="dynamicDemo"></p>
+         <!-- <button onclick="loaddynamic();">Click me</button> -->
+
+        <!-- <input type="text" id ="salary_user" value="" onchange="pushsalary();"> -->
+       
+       <!-- <input type="text" id ="user_name" value="" onmouseout="displayname();"> -->
+       
+       <!-- <input type="text" id ="user_grade" value="" onmouseover="displayGrade();"> -->
+
+       <!-- <input type="text" id ="user_grade" value="" onkeydown="keydownmethod()"> -->
+
+
+
+         <script type="text/Javascript">
+           function loaddynamic()
+           {
+                let varmy = "Onclick event";
+                document.getElementById("dynamicDemo").innerHTML = varmy;
+           }
+
+           function pushsalary()
+           {
+                let userSalary = document.getElementById("salary_user").value;
+                document.getElementById("dynamicDemo").innerHTML = userSalary;
+           }
+
+           function displayname()
+           {
+                 let userName = document.getElementById("user_name").value;
+                document.getElementById("dynamicDemo").innerHTML = userName;
+           }
+
+           function displayGrade()
+           {
+            let varmy = "On mouse over event";
+                document.getElementById("dynamicDemo").innerHTML = varmy;
+
+           }
+
+           function keydownmethod()
+           {
+                let varmy = "On key down event";
+                document.getElementById("dynamicDemo").innerHTML = varmy;
+
+           }
+
+           function loadDynamicContent()
+           {
+                let load = "Load Dynamic Content.";
+                document.getElementById("dynamicDemo").innerHTML = load;
+           }
+
+           
+
+         </script>
+ 
+     </Body>
+     
+     </HTML>
