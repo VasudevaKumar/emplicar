@@ -13,16 +13,54 @@
      
      
      <Body>
+
+        <input type="text" name="firstName" id="firstName" value="">
+        <br />
+        <input type="text" name="lastName" id="lastName" value="">
+        <br />
+        <!-- <button onclick="stringMethods()">Calculate Length</button> -->
+
+        <button onclick="concat_fn();">Display FullName</button>
+
+      
          <!-- <p id="sumDemo">Sum = <span id="dynamicDemo"></span></p> -->
  
          <p id ="dynamicDemo"></p>
          
          <script type="text/Javascript">
+           function concat_fn()
+           {
+              let firstName = document.getElementById("firstName").value;
+              let lastName = document.getElementById("lastName").value;
+
+              let fullName = firstName.concat(" ", lastName);
+              document.getElementById("dynamicDemo").innerHTML = fullName;
+           }  
            function stringMethods()
            {
-            
+            // let newText = "Welcome To Javascript";
+            // let trimSting = "                    PHP 7.4                      ";
+            // let newTextlen = newText.length;
+            // document.getElementById("dynamicDemo").innerHTML = newTextlen;
+           // let newTextPortion = newText.slice(7,15);
+           // let newTextPortion = newText.slice(7);
+           // let newTextPortion = newText.slice(-12, -6);
+           // let replacedString = newText.replace("Javascript", "PHP");
+          // let UpperString = newText.toUpperCase();
+         // let LowerString = newText.toLowerCase();
+        //  let newString = newText.concat(" ", "In Emplicar", " In The Month", " 89 ");
+          //  let trimStingTrim = trimSting.trim();
+           // let trimSrtingSart = trimSting.trimStart();
+         //   let trimSrtingEnd = trimSting.trimEnd();
+          //  let trimStingLen = trimSrtingEnd.length;
+           // document.getElementById("dynamicDemo").innerHTML = trimStingLen;
+
+            let demo_lenth = document.getElementById("stringDemo").value;
+            let demo_cal_length = demo_lenth.length;
+            document.getElementById("dynamicDemo").innerHTML = demo_cal_length;
            }           
 
+            // stringMethods();
          </script>
  
      </Body>
