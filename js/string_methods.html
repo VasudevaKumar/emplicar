@@ -13,15 +13,15 @@
      
      
      <Body>
-
+ <!-- 
         <input type="text" name="firstName" id="firstName" value="">
         <br />
         <input type="text" name="lastName" id="lastName" value="">
         <br />
-        <!-- <button onclick="stringMethods()">Calculate Length</button> -->
+       <button onclick="stringMethods()">Calculate Length</button> 
 
         <button onclick="concat_fn();">Display FullName</button>
-
+-->
       
          <!-- <p id="sumDemo">Sum = <span id="dynamicDemo"></span></p> -->
  
@@ -55,12 +55,27 @@
           //  let trimStingLen = trimSrtingEnd.length;
            // document.getElementById("dynamicDemo").innerHTML = trimStingLen;
 
-            let demo_lenth = document.getElementById("stringDemo").value;
-            let demo_cal_length = demo_lenth.length;
-            document.getElementById("dynamicDemo").innerHTML = demo_cal_length;
+            // let demo_lenth = document.getElementById("stringDemo").value;
+            // let demo_cal_length = demo_lenth.length;
+            // document.getElementById("dynamicDemo").innerHTML = demo_cal_length;
+
+           // let account_no = '123456';
+           // let account_no_pad_1 = account_no.padStart('15','$');
+           // let account_no_pad_1 = account_no.padEnd('15','$');
+           // let chat_index = account_no.charAt(5);
+
+         let v_string = "This is ** javascript ** class && is";
+         let ary = v_string.split('**');
+         document.getElementById("dynamicDemo").innerHTML = ary[1];
+         // let is_string_available = v_string.search("PHP");
+         // document.write(is_string_available);
+
+        // let index_of = v_string.search("is");
+        // document.write(index_of);
+                   
            }           
 
-            // stringMethods();
+             stringMethods();
          </script>
  
      </Body>
