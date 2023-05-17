@@ -1,0 +1,83 @@
+<HTML>
+    <HEAD> 
+         <Title> Javascript </Title> 
+         <!-- 
+ 
+         
+ 
+         -->
+         
+ 
+             
+         
+     </HEAD>
+     
+     
+     <Body>
+         
+        <label>Enter Manju student name</label><input type = "text" id="manju" value="">
+        <label>Enter Manju student marks</label><input type = "text" id="manjuMarks" value="">
+        <br />
+        <label>Enter Chechu student name</label><input type = "text" id="chenchu" value="">
+        <label>Enter Chechu student marks</label><input type = "text" id="chenchuMarks" value="">
+        <br />
+        <label>Enter Supriya student name</label><input type = "text" id="supriya" value="">
+        <label>Enter Supriya student marks</label><input type = "text" id="supriyaMarks" value="">
+        <br />
+       
+        <button onclick="fn_manjumakrs()">ManjuMarks</button>
+        <br />
+        <button onclick="fn_chenchurmarks()">ChecjuMarks</button>
+        
+        <script type="text/Javascript">
+
+            function fn_manjumakrs()
+            {
+                let student = {};
+                let manjuName = document.getElementById('manju').value;
+                let manjuMarks = document.getElementById('manjuMarks').value;
+
+                let chechuName = document.getElementById('chenchu').value;
+                let chechuMarks = document.getElementById('chenchuMarks').value;
+
+                let supriyaName = document.getElementById('supriya').value;
+                let supriyaMarks = document.getElementById('supriyaMarks').value;
+
+
+
+                // document.write(manjuName);
+                // document.write('<br />');
+                // document.write(manjuMarks);
+                
+
+                student.manjuName = manjuMarks;
+                student.chechuName = chechuMarks;
+                student.supriyaName = supriyaMarks;
+
+
+                document.write(student.supriyaName);
+            }
+
+            function fn_chenchurmarks()
+            {
+
+                let student = {};
+            
+
+                let chechuName = document.getElementById('chenchu').value;
+                let chechuMarks = document.getElementById('chenchuMarks').value;
+                student.chechuName = chechuMarks;
+                document.write(student.chechuName);
+               
+
+            }
+
+            function displayContent(keys){
+               // EX: Manju
+               document.write(student.keys);
+
+            }
+        </script>
+     </Body>
+     
+     </HTML>
