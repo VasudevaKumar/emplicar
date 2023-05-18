@@ -1,0 +1,91 @@
+<HTML>
+    <HEAD> 
+         <Title> Javascript </Title> 
+         <!-- 
+ 
+        String methods.
+         -->
+         
+ 
+             
+         
+     </HEAD>
+     
+     
+     <Body>
+ <!-- 
+        <input type="text" name="firstName" id="firstName" value="">
+        <br />
+        <input type="text" name="lastName" id="lastName" value="">
+        <br />
+       <button onclick="stringMethods()">Calculate Length</button> 
+
+        <button onclick="concat_fn();">Display FullName</button>
+-->
+      
+         <!-- <p id="sumDemo">Sum = <span id="dynamicDemo"></span></p> -->
+ 
+         <p id ="dynamicDemo"></p>
+         
+         <script type="text/Javascript">
+           
+            function numberMethods()
+            {
+                
+                // let xy = [100,200,300,400];
+                //  xy.splice(3,1,'Kiwi', 'Apple');
+                // document.write(xy);
+
+                // let xy = [100,200,300,400];
+                //  xy.splice(2,2,'XXX');
+                // document.write(xy);
+
+
+                //   let xy = [11,21,31,41,51,61,71];
+                //   let zz = xy.slice(3,5); // Starting element exclude & End element include.
+                //                             // 4th element & 5th element.
+                // document.write(zz);
+                
+                // const numbers = [45, 4, 9, 16, 25];
+                // let len = numbers.length;
+                // //document.write(len);
+
+                // for(i=0 ; i < len; i++)
+                // {
+                //     let text = numbers[i];
+                //     document.write(text);
+                //     document.write('<br />');
+                // }
+                
+                // const numbers = [455, 45, 95, 165, 255];
+                // let txt = "";
+                // numbers.forEach(vasudev_fn);
+
+                // function vasudev_fn(value) {
+                //         document.write(value);
+                //         document.write('<br />');
+                // }
+
+                const numbers1 = [45, 4, 9, 16, 25];
+                const numbers2 = numbers1.map(fn_newmethod);
+
+                function fn_newmethod(value) {
+                return value + 2;
+                }
+                document.write(numbers2);
+                
+                // for(i = 0 ; i<5; i++){
+                //     document.write(i);
+                //     document.write('<br />');
+                // }
+                
+                // document.write('End of loop');
+
+            }           
+
+             numberMethods();
+         </script>
+ 
+     </Body>
+     
+     </HTML>
