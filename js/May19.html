@@ -1,0 +1,130 @@
+<HTML>
+    <HEAD> 
+         <Title> Javascript </Title> 
+         <!-- 
+ 
+        String methods.
+         -->
+         
+ 
+             
+         
+     </HEAD>
+     
+     
+     <Body>
+ <!-- 
+        <input type="text" name="firstName" id="firstName" value="">
+        <br />
+        <input type="text" name="lastName" id="lastName" value="">
+        <br />
+       <button onclick="stringMethods()">Calculate Length</button> 
+
+        <button onclick="concat_fn();">Display FullName</button>
+-->
+      
+         <!-- <p id="sumDemo">Sum = <span id="dynamicDemo"></span></p> -->
+ 
+         <p id ="dynamicDemo"></p>
+         
+         <script type="text/Javascript">
+           
+            function numberMethods()
+            {
+                
+                // const numbers = [45, 4, 9, 16, 25];
+                // const over18 = numbers.filter(fn_filter);
+
+                // function fn_filter(value) {
+                //   return value > 10;
+                // }
+
+                // document.write(over18);
+                
+
+              //    The reduce() method runs a function on each array element to produce (reduce it to) a single value.
+                        // const numbers = [45, 4, 9, 16, 25];
+                        // let sum = numbers.reduce(fn_reduce);
+
+                        // function fn_reduce(total, value, index, array) {
+                        //     return total + value;
+                        // }
+                        // document.write(sum);
+            
+
+                        
+            // const numbers = [45, 4, 9, 16, 25];
+            // let allOver18 = numbers.every(myFunction);
+
+            // function myFunction(value, index, array) {
+            //     return value > 1;
+            // }
+
+            // document.write(allOver18);
+                            
+                // let x = 55;
+
+                // if(x <= 20)
+                // {
+                //     document.write('Less then 20');
+                // }
+                // else if(x > 20 && x < 40)
+                // {
+                //     document.write('Greater then 20 and less than 40');
+                // }
+                // else{
+                //     document.write('Greater then 40');
+                // }
+
+                // let country = 'Canada1';
+                // switch(country)
+                // {
+                //     case 'USA':
+                //         document.write('USA country');
+                //     break;
+                //     case 'India':
+                //         document.write('India country');
+                //     break;
+                //     case 'UAE':
+                //         document.write('UAE country');
+                //     break;
+                //     case 'Canada':
+                //         document.write('Canda country');
+                //     break;
+                //     default:
+                //         document.write('Defalt country');
+                //     break;
+
+                // }
+                
+                // for In loop
+
+                const person = {fname:"John", lname:"Doe", age:25};
+                let text = "";
+
+                    for (let x_key in person) {
+
+                        if(x_key == 'age')
+                        {
+                            // text += " "+person[x_key];
+                            if(person[x_key] >= 25)
+                            {
+                                document.write('Age greater than or equal to 25');
+                            }
+                            else{
+                                document.write('Age not greater than or equal to 25');
+                            }
+                        }
+                }
+               // document.write(text);
+
+                // Only print age by using the for In loop form the above example. Should not change variables.
+
+            }           
+
+             numberMethods();
+         </script>
+ 
+     </Body>
+     
+     </HTML>
