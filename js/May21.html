@@ -1,0 +1,59 @@
+<HTML>
+    <HEAD> 
+         <Title> Javascript </Title> 
+         <!-- 
+ 
+        Continue loop & Break.
+         -->
+         
+ 
+             
+         
+     </HEAD>
+     
+     
+     <Body>
+ 
+ 
+         <p id ="dynamicDemo"></p>
+         
+         <script type="text/Javascript">
+                  
+            // class Car {
+            //     constructor(name, year) {
+            //         this.name = 'This is car name ' + name;
+            //         this.year = year;
+            //     }
+            // }
+
+            // const myCar1 = new Car("Ford", 2014);
+            // const myCar2 = new Car("Audi", 2019);
+
+            // document.getElementById("dynamicDemo").innerHTML =
+            // myCar1.name + " " + myCar2.name;
+
+            
+
+            class Car {
+                
+                constructor(name, year) {
+                    this.name = name;
+                    this.year = year;
+                }
+
+                    age() {
+                        const date = new Date();
+                        return date.getFullYear() - this.year;
+                    }
+                }
+
+                const myCar = new Car("Ford", 2016);
+
+                document.getElementById("dynamicDemo").innerHTML =
+                "My car is " + myCar.age() + " years old.";
+
+         </script>
+ 
+     </Body>
+     
+     </HTML>-

@@ -1,0 +1,134 @@
+<HTML>
+
+<HEAD>
+    <Title> Javascript </Title>
+    <!-- 
+ 
+        JSON .
+         -->
+
+
+
+
+</HEAD>
+
+
+<Body>
+
+
+    <p id="dynamicDemo"></p>
+
+
+    <script type="text/Javascript">
+
+            // let person = {'firstName':'Vasudev', 'lastName':'Sarvepalli'};
+                // Add an element to an object.
+               //  person.salary  = '23';
+               //  person.address = 'Hyderabd';
+               // []
+
+            // let text = '{ "employees" : [' +
+            //             '{ "firstName":"John" , "lastName":"Doe" },' +
+            //             '{ "firstName":"Anna" , "lastName":"Smith" },' +
+            //             '{ "firstName":"Peter" , "lastName":"Jones" } ]}';
+            // let textobj = JSON.parse(text);
+           // document.write(typeof(textobj));
+
+          // document.write(textobj.employees[0].firstName);
+
+          
+          let empObj = {
+                            "employees":
+                                        [
+                                            150,
+                                            {"firstName":"John", "lastName":"Doe"},
+                                            {"firstName":"Anna", "lastName":"Smith"},
+                                            {"firstName":"Peter", "lastName":"Jones"}, 
+                                            'Vasudev', 'Maju' 
+                                        ]
+                        };
+
+          let empObj = {
+                           "employees":[
+                           150,
+                            {"firstName":"John", "lastName":"Doe"},
+                            {"firstName":"Anna", "lastName":"Smith"},
+                            {"firstName":"Peter", "lastName":"Jones"},
+                            'Vasudev', 'Maju'
+                           ]
+            };
+
+          document.write(empObj.employees[1].firstName);
+          document.write('<br />');
+          document.write(empObj.employees[4]);
+
+          // Best Practices
+
+        //  Give cleaner code
+        // Provide a single place to look for local variables
+        // Make it easier to avoid unwanted (implied) global variables
+        // Reduce the possibility of unwanted re-declarations
+
+        // // Declare at the beginning
+        // let firstName, lastName, price, discount, fullPrice;
+
+        // // Use later
+        // firstName = "John";
+        // lastName = "Doe";
+
+        // price = 19.90;
+        // discount = 0.10;
+
+        // fullPrice = price - discount;
+
+
+        // if(x==10){'print 10 value true'};
+
+        // if(x == 10)
+        // {
+        //     // print
+        // }
+
+
+        // Adding two integers and retuns sum value
+        // function fn_sum_of_two_numbers()
+        // {
+        //     let x , y;
+        //     x = 10;
+        //     y = 20;
+
+        //     // Business logic wil start
+        //     if( x== 10)
+        //     {
+        //            z =  getIntge(x);
+        //     }
+
+            
+
+        //     if(y == 20)
+        //     {
+
+        //     }
+
+        //     unset(x);
+
+        // }
+
+        // function getIntge(x)
+        // {
+        //     return x * 2;
+        // }
+    
+        
+        let car = {type:"Fiat", model:"500", color:"white"};
+        car = "Fiat";      // Changes object to string
+
+
+        const car = {type:"Fiat", model:"500", color:"white"};
+        car = "Fiat";      // Not possible
+
+        </script>
+
+</Body>
+
+</HTML>-
