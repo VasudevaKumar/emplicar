@@ -1,0 +1,65 @@
+<HTML>
+   <HEAD> 
+        <Title> Javascript </Title> 
+        <script
+                src="https://code.jquery.com/jquery-3.7.0.min.js"
+                integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+                crossorigin="anonymous"></script>
+
+         
+        
+        
+
+            
+        
+    </HEAD>
+    
+    
+    <Body>
+        <!-- <p id="sumDemo">Sum = <span id="dynamicDemo"></span></p> -->
+
+        <!-- <p id ="demo">Hello All</p> -->
+
+        <!-- <a href ="#" onclick="showdiv();">Show</a>
+        <a href ="#" onclick="hidediv();">Hide</a> -->
+
+        <!-- <a href ="#" onclick="togglethis();">Toggle This</a> -->
+
+        <div id ="div1">Hi div1</div> <br />
+        <div id ="div2">Hi div2</div> <br />
+        <div id ="div3">Hi div3</div> <br />
+
+        <!-- <a href ="#" onclick="togglethis();">Fade in</a> -->
+        <button id="showEffects">Show Effect</button>
+
+        <script type="text/Javascript">
+           // document.getElementById("demo").innerHTML = "hello";
+           // $("#demo").html('hellorr');
+            
+         //   function showdiv()
+         //   {
+         //    $("#demo").show(1000);
+         //   }
+
+         //   function hidediv()
+         //   {
+         //    $("#demo").hide(1000);
+         //   }
+
+         //   function togglethis()
+         //   {
+         //    $("#demo").toggle();
+         //   }
+
+         $("#showEffects").click(function(){
+
+            $("#div1").slideDown();
+            // $("#div2").fadeIn("slow");
+            // $("#div3").fadeIn(6000);
+
+         })
+        </script>
+
+    </Body>
+    
+    </HTML>

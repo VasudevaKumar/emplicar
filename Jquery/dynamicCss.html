@@ -1,0 +1,84 @@
+<HTML>
+   <HEAD> 
+        <Title> Javascript </Title> 
+        <script
+                src="https://code.jquery.com/jquery-3.7.0.min.js"
+                integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+                crossorigin="anonymous"></script>
+
+         
+        <style type="text/css">
+            .redbox{
+                border: 1px solid red;
+                width: 100px;
+                height: 100px;
+                font-weight: bold;
+                
+                
+            }
+
+            .newClass{
+                font-style: italic;
+                font-size: 15px;
+                margin: 15px;
+            }
+        </style>
+        
+
+            
+        
+    </HEAD>
+    
+    
+    <Body>
+        
+        <div id="parent" class="redbox">
+            This is Parent
+            <div id = "child">This is child</div>
+        </div>
+
+        <!-- <button onclick="addredbox();">Add Red box Class</button>
+
+        <button onclick="removeredbox();">Remove Red box Class</button> 
+
+        <button onclick="togglebox();">Toggle Red box Class</button>-->
+
+        <button onclick="background();">Apply BackGround</button>
+
+        
+
+        <script type="text/Javascript">
+          
+            // function addredbox()
+            // {
+            //     $("#parent").addClass('redbox');
+            // }
+
+            // function removeredbox()
+            // {
+            //     $("#parent").removeClass('redbox');
+            // }
+            
+            // function togglebox()
+            // {
+            //     $("#parent").toggleClass('redbox');
+            // }
+
+            function background()
+            {
+                $("#parent").css("color", "blue")
+                // $("#parent").css({"background-color": "blue", "font-weight" : "bold", 
+                // "border" : "1px solid red", "width" : "100px", "height":"100px"});
+
+                // $("#parent").addClass('newClass');
+            }
+
+         
+        </script>
+
+    </Body>
+    
+    </HTML>
+
+
+   

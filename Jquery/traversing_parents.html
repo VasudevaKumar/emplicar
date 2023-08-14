@@ -1,0 +1,49 @@
+<HTML>
+   <HEAD> 
+        <Title> Javascript </Title> 
+        <script
+                src="https://code.jquery.com/jquery-3.7.0.min.js"
+                integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+                crossorigin="anonymous"></script>
+            
+                <style type ="text/css">
+                    .ancestors * { 
+                    display: block;
+                    border: 2px solid lightgrey;
+                    color: lightgrey;
+                    padding: 5px;
+                    margin: 20px;
+                    
+                    }
+
+                </style>
+        
+        <script>
+            $(document).ready(function(){
+              $("span").parents().css({"color": "green", "border": "2px solid red"});
+            });
+            </script>
+    </HEAD>
+    
+    
+    <Body>
+        
+        <div class="ancestors">
+                <div style="width:500px;">div (great-grandparent)
+                    <ul>ul (grandparent)  
+                        <li>li (direct parent)
+                                <span>span</span>
+                        </li>
+                    </ul>   
+                </div>
+          
+                <div style="width:500px;">div (grandparent)   
+                    <p>p (direct parent)
+                        <span>span</span>
+                    </p> 
+                </div>
+        </div>
+
+    </Body>
+    
+    </HTML>

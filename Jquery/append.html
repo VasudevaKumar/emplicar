@@ -1,0 +1,60 @@
+<HTML>
+   <HEAD> 
+        <Title> Javascript </Title> 
+        <script
+                src="https://code.jquery.com/jquery-3.7.0.min.js"
+                integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+                crossorigin="anonymous"></script>
+
+         
+        
+        
+
+            
+        
+    </HEAD>
+    
+    
+    <Body>
+        <div id="bp">
+        <input type="text" name="fName" id="fName">
+        </div>
+        <button onclick="append()">append</button>
+
+        <button onclick="prepend()">prepend</button>
+
+
+        <button onclick="after()">after</button>
+
+        <button onclick="before()">before</button>
+
+        
+        <div id ="displayContent"></div>
+
+        <script type="text/Javascript">
+          
+            function append()
+            {
+                $("#bp").append('<h1>Append</h1>');
+            }
+            function prepend()
+            {
+                $("#bp").prepend('<h1>Prepend</h1>');
+            }
+
+            function after()
+            {
+                $("#fName").after('<h1>Next</h1>');
+            }
+
+            function before()
+            {
+                $("#fName").before('<h1>Before</h1>');
+            }
+
+         
+        </script>
+
+    </Body>
+    
+    </HTML>

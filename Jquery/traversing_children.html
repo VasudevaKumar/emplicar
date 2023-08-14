@@ -1,0 +1,67 @@
+<HTML>
+   <HEAD> 
+        <Title> Javascript </Title> 
+        <script
+                src="https://code.jquery.com/jquery-3.7.0.min.js"
+                integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+                crossorigin="anonymous"></script>
+            
+                <style type ="text/css">
+                    .ancestors * { 
+                    display: block;
+                    border: 2px solid lightgrey;
+                    color: lightgrey;
+                    padding: 5px;
+                    margin: 20px;
+                    
+                    }
+
+                </style>
+        
+        <script>
+            $(document).ready(function(){
+                 // $("div").children('p.second').css({"color": "red", "border": "2px solid red"});
+                 $("div").children('span').css({"color": "red", "border": "2px solid red"});
+            });
+            </script>
+    </HEAD>
+    
+    
+    <Body>
+        
+        
+                <div style="width:500px;" class="ancestors">div (great-grandparent)
+                    <!-- <ul>ul (grandparent)  
+                        <li>li (direct parent)
+                                <span>span</span>
+                        </li>
+                    </ul>  -->
+                    <span>span23</span>
+                    <span>span24</span>
+
+                    <p class="first">p (1st P Tag)
+                        <span>span</span>
+                    </p>
+
+
+                    <p class="second">p (2nd P Tag)
+                        <span>span</span>
+                    </p>
+
+                </div>
+          
+                <div style="width:500px;" class="ancestors">div (grandparent)   
+                    <p class="first">p (1st P Tag)
+                        <span>span</span>
+                    </p>
+
+
+                    <p class="second">p (2nd P Tag)
+                        <span>span</span>
+                    </p> 
+                </div>
+       
+
+    </Body>
+    
+    </HTML>

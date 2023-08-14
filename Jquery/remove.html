@@ -1,0 +1,55 @@
+<HTML>
+   <HEAD> 
+        <Title> Javascript </Title> 
+        <script
+                src="https://code.jquery.com/jquery-3.7.0.min.js"
+                integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+                crossorigin="anonymous"></script>
+
+         
+        <style type="text/css">
+            .redbox{
+                border: 1px solid red;
+                width: 100px;
+                height: 100px;
+            }
+        </style>
+        
+
+            
+        
+    </HEAD>
+    
+    
+    <Body>
+        
+        <div id="parent" class="redbox">
+            This is Parent
+            <div id = "child">This is child</div>
+        </div>
+
+        <button onclick="remove();">Remove</button>
+
+        <br />
+
+        <button onclick="empty();">Empty</button>
+
+        <script type="text/Javascript">
+          
+            function remove()
+            {
+                $("#parent").remove('');
+            }
+
+            function empty()
+            {
+                $("#parent").empty('');
+            }
+
+
+         
+        </script>
+
+    </Body>
+    
+    </HTML>

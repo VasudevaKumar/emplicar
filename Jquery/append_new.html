@@ -1,0 +1,48 @@
+<HTML>
+   <HEAD> 
+        <Title> Javascript </Title> 
+        <script
+                src="https://code.jquery.com/jquery-3.7.0.min.js"
+                integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+                crossorigin="anonymous"></script>
+
+         
+        
+        
+
+            
+        
+    </HEAD>
+    
+    
+    <Body>
+        
+        <div id="demo">
+            <input type="text" name="fName" id="fName">
+        </div>
+
+        <button onclick="prepend_con();">Prepend Content</button>
+
+        <br />
+
+        <button onclick="append_con();">Append Content</button>
+
+        <script type="text/Javascript">
+          
+            function prepend_con()
+            {
+                $("#demo").prepend('<h1>Before demo</h1>');
+            }
+
+            function append_con()
+            {
+                $("#demo").append('<h1>After demo</h1>');
+            }
+
+
+         
+        </script>
+
+    </Body>
+    
+    </HTML>

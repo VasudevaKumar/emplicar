@@ -1,0 +1,40 @@
+<HTML>
+   <HEAD> 
+        <Title> Javascript </Title> 
+        <script
+                src="https://code.jquery.com/jquery-3.7.0.min.js"
+                integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+                crossorigin="anonymous"></script>
+
+        
+        
+
+            
+        
+    </HEAD>
+    
+    
+    <Body>
+        
+        <input type="text" name="fName" id="fName">
+        <button onclick="getValues()">Get Value</button>
+        
+        <div id ="displayContent"></div>
+
+        <script type="text/Javascript">
+          
+            function getValues()
+            {
+                var fNameVal = $("#fName").val();
+                // alert(fNameVal);
+                var newVal = 'Welcome to';
+                let results = newVal.concat(fNameVal);
+               
+                $("#displayContent").html(results);
+            }
+         
+        </script>
+
+    </Body>
+    
+    </HTML>

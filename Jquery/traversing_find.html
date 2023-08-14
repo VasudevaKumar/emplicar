@@ -1,0 +1,67 @@
+<HTML>
+   <HEAD> 
+        <Title> Javascript </Title> 
+        <script
+                src="https://code.jquery.com/jquery-3.7.0.min.js"
+                integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+                crossorigin="anonymous"></script>
+            
+                <style type ="text/css">
+                    .ancestors * { 
+                    display: block;
+                    border: 2px solid lightgrey;
+                    color: lightgrey;
+                    padding: 5px;
+                    margin: 20px;
+                    
+                    }
+
+                </style>
+        
+        <script>
+            $(document).ready(function(){
+                 // $("div").find('#span3').css({"color": "red", "border": "2px solid red"});
+                 $("div").find('p').find('img').css({"color": "red", "border": "2px solid red"});
+                 
+            });
+            </script>
+    </HEAD>
+    
+    
+    <Body>
+        
+        
+                <div style="width:500px;" class="ancestors">div (great-grandparent)
+                    <!-- <ul>ul (grandparent)  
+                        <li>li (direct parent)
+                                <span>span</span>
+                        </li>
+                    </ul>  -->
+                    
+
+                    <p class="first">p (1st P Tag)
+                        <span class="first" id="span1">span</span>
+                    </p>
+
+
+                    <p class="second">p (2nd P Tag)
+                        <span class="second" id="span2">span</span>
+                    </p>
+
+                </div>
+          
+                <div style="width:500px;" class="ancestors">div (grandparent)   
+                    <p class="first" >p (1st P Tag)
+                        <span class="first" id="span3">span</span>
+                    </p>
+
+
+                    <p class="second">p (2nd P Tag)
+                        <span class="second" id="span4">span</span>
+                    </p> 
+                </div>
+       
+
+    </Body>
+    
+    </HTML>
